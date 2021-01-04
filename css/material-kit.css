@@ -14,11 +14,11 @@
  */
 /*     brand Colors              */
 .carousel.carousel-full-navigation .left {
-  cursor: url("../../img/arrow-left.png"), url("../../img/arrow-left.cur"), default !important;
+  cursor: url("https://cdn.jsdelivr.net/gh/KKUPGRADER/tryit@css/img/arrow-left.png"), url("https://cdn.jsdelivr.net/gh/KKUPGRADER/tryit@css/img/arrow-left.cur"), default !important;
 }
 
 .carousel.carousel-full-navigation .right {
-  cursor: url("../../img/arrow-right.png"), url("../../img/arrow-right.cur"), default !important;
+  cursor: url("https://cdn.jsdelivr.net/gh/KKUPGRADER/tryit@css/img/arrow-right.png"), url("https://cdn.jsdelivr.net/gh/KKUPGRADER/tryit@css/img/arrow-right.cur"), default !important;
 }
 
 .card {
@@ -32,7 +32,6 @@
 }
 
 html {
-  font-family: sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -58,16 +57,6 @@ section {
   display: block;
 }
 
-body {
-  margin: 0;
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #212529;
-  text-align: left;
-  background-color: #fafafa;
-}
 
 [tabindex="-1"]:focus {
   outline: 0 !important;
@@ -453,7 +442,6 @@ template {
 }
 
 html {
-  font-family: sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -479,16 +467,6 @@ section {
   display: block;
 }
 
-body {
-  margin: 0;
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #212529;
-  text-align: left;
-  background-color: #fafafa;
-}
 
 [tabindex="-1"]:focus {
   outline: 0 !important;
@@ -948,12 +926,7 @@ mark,
   color: #6c757d;
 }
 
-code,
-kbd,
-pre,
-samp {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-}
+
 
 code {
   font-size: 87.5%;
@@ -5894,7 +5867,7 @@ button.close {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: inherit;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -6019,7 +5992,7 @@ button.close {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: inherit;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -15364,7 +15337,7 @@ h6,
 .h2,
 .h3,
 .h4 {
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family:inherit;
   font-weight: 300;
   line-height: 1.5em;
 }
@@ -15455,7 +15428,6 @@ small,
 .footer-big h4,
 .media .media-heading {
   font-weight: 700;
-  font-family: "Roboto Slab", "Times New Roman", serif;
 }
 
 .title,
