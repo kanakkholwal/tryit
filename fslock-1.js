@@ -1,4 +1,4 @@
-
+"use strict";
 $(document).ready(function() { (function(W,D){ W.asli_config = { url: '', page: 'p/blog-page.html', output: '#output', defaultkey: 'K K UPGRADER', fixednavbar: false, countdown: true, timedown: 10, lang: { urlempty: "URL can not empty", convertsuccess: "Convert URL success, copy url on box below", validtext: "HTTP, HTTPS, or WWW", gourltext: "try clicking the link, sir", nourl: "nggapain pak ??, the link is missing", errorconvert: "URL can not to convert", emptypass: "Password can not empty", wrongpass: "Password is incorrect", countdowntext: "Please Wait {{anascountdown}} Second" } }
 
     var xv = $('footer > .d-table > .d-table-row > .d-table-cell > .container > .row > .col-sm-7 > a#kkfs');
