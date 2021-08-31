@@ -38,7 +38,7 @@
                             dataType: 'json',
                             cache: true,
                             beforeSend: function() {
-                              result.innerHTML = '<div class="text-center"><div class="spinner-border text-success" role="status"><span class="visually-hidden">Loading...</span><h4>Fetching Post</h4></div>' ;
+                              result.innerHTML = '<div class="text-center"><div class="spinner-border text-success" role="status"><span class="visually-hidden">Loading...</span></div>' ;
                             },
                             success: function(a){
                               var post = a.feed.entry,
@@ -56,7 +56,7 @@
                               }, 0);
                             }
                           });
-                          // result.innerHTML = '<div class="text-center"><div class="spinner-border text-success" role="status"><span class="visually-hidden">Loading...</span></div> Fetching Post</div>' ;
+                          // result.innerHTML = '<div class="text-center"><div class="spinner-border text-success" role="status"><span class="visually-hidden">Loading...</span></div></div>' ;
                         } else {
                           result.innerHTML = '<div class="alert alert-warning text-center">'+config.lang.validtext+'</div>' ;
                         }
