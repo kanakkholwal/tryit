@@ -44,7 +44,7 @@ if (!String.prototype.startsWith) {
                             timeleft -= 1;
                             if(timeleft <= 0){
                               clearInterval(KKFS);
-                              report[0].innerHTML = '<div class="alert bg-success p-3 text-white text-center" role="alert" ><i class="fas fa-check-circle me-3"></i><a class="card-link" href="'+(data.url.toLowerCase().startsWith('www.') ? '//' : '')+''+data.url+'">'+config.lang.gourltext+'</a></div>';
+                              report[0].innerHTML = '<div class="alert bg-success p-3 text-white text-center" role="alert" ><i class="fas fa-check-circle me-3"></i><a class="card-link text-white" href="'+(data.url.toLowerCase().startsWith('www.') ? '//' : '')+''+data.url+'">'+config.lang.gourltext+'</a></div>';
                             }
                           }, 1000);
 						}
