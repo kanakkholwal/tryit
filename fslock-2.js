@@ -6,8 +6,8 @@
 
                   $('#passbtn').on('click', function(e) {
                     var $this = $(this);
-                      if($this.hasClass('btn-outline-dark')){
-                        $this.removeClass('btn-outline-dark').addClass('btn-outline-info');
+                      if($this.hasClass('btn-dark')){
+                        $this.removeClass('btn-dark').addClass('btn-primary');
                         $('#passinput').removeAttr('disabled');
                       } else {
                         $this.removeClass('btn-success').addClass('btn-dark');
