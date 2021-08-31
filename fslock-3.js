@@ -28,7 +28,7 @@ if (!String.prototype.startsWith) {
                     if (passin[0].value.length) {
                       if (typeof(data) === "object") {
 						if(!data.countdown){
-                          report[0].innerHTML = '<div class="text-center"><a href="'+(data.url.toLowerCase().startsWith('www.') ? '//' : '')+''+data.url+'">'+config.lang.gourltext+'</a></div>';
+                          report[0].innerHTML = '<div class="text-center"><a target="_blank" href="'+(data.url.toLowerCase().startsWith('www.') ? '//' : '')+''+data.url+'">'+config.lang.gourltext+'</a></div>';
                           $this.find('button, input').attr('disabled', 'disabled');
                           $this.slideUp('slow');
 						} else {
