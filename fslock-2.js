@@ -61,7 +61,7 @@
                           result.innerHTML = '<div class="alert alert-warning text-center">'+config.lang.validtext+'</div>' ;
                         }
                       } else {
-                        result.innerHTML = validurlit(url.value) ? '<div class="alert alert-success text-center">'+config.lang.convertsuccess+'</div><div class="input-group mb-0"><div class="input-group-prepend"><span class="input-group-text"><i class="fas fa-copy fa-fw"></i></span></div><input class="form-control" onfocus="this.select()" onmouseup="return false" style="box-shadow: 0 0 0 0 transparent" value="'+blog+'/'+config.page+'?u='+encodeURIComponent(CryptoJS.AES.encrypt(JSON.stringify(data), keyit))+'"/></div>' : '<div class="alert alert-warning text-center">'+config.lang.validtext+'</div>' ;
+                        result.innerHTML = validurlit(url.value) ? '<div class="alert alert-success text-center">'+config.lang.convertsuccess+'</div><div class="input-group  flex-nowrap mb-3"><span class="input-group-text" id="final-result"><i class="fas fa-copy fa-fw"></i></span><input type="text"  id ="copythis" class="form-control" onfocus="this.select()" onmouseup="return false"  value="'+linknya+'?u='+encodeURIComponent(CryptoJS.AES.encrypt(JSON.stringify(data), keyit))+'" aria-describedby="final-result"/></div>' : '<div class="alert alert-warning text-center">'+config.lang.validtext+'</div>' ;
                       }
                     } else {
                       result.innerHTML = '<div class="alert alert-danger text-center">'+config.lang.urlempty+'</div>';
