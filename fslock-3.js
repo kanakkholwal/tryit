@@ -44,15 +44,15 @@ if (!String.prototype.startsWith) {
                             timeleft -= 1;
                             if(timeleft <= 0){
                               clearInterval(KKFS);
-                              report[0].innerHTML = '<div class="alert bg-success p-3 text-center" role="alert" ><i class="fas fa-check-circle me-3"></i><a class="card-link" href="'+(data.url.toLowerCase().startsWith('www.') ? '//' : '')+''+data.url+'">'+config.lang.gourltext+'</a></div>';
+                              report[0].innerHTML = '<div class="alert bg-success p-3 text-white text-center" role="alert" ><i class="fas fa-check-circle me-3"></i><a class="card-link" href="'+(data.url.toLowerCase().startsWith('www.') ? '//' : '')+''+data.url+'">'+config.lang.gourltext+'</a></div>';
                             }
                           }, 1000);
 						}
                       } else {
-                        report[0].innerHTML = '<div class="alert text-center bg-danger p-3" role="alert" ><i class="fas fa-times-circle me-3"></i>'+config.lang.wrongpass+'</div>';
+                        report[0].innerHTML = '<div class="alert text-center text-white bg-danger p-3" role="alert" ><i class="fas fa-times-circle me-3"></i>'+config.lang.wrongpass+'</div>';
                       }
                     } else {
-                      report[0].innerHTML = '<div class="alert text-center bg-danger p-3" role="alert" ><i class="fas fa-times-circle me-3"></i>'+config.lang.emptypass+'</div>';
+                      report[0].innerHTML = '<div class="alert text-center text-white bg-danger p-3" role="alert" ><i class="fas fa-times-circle me-3"></i>'+config.lang.emptypass+'</div>';
                     }
 
                     setTimeout(function(){
@@ -72,7 +72,7 @@ if (!String.prototype.startsWith) {
 
                     if (typeof(data) === "object") {
                       if(!data.countdown){
-                      	$(config.output)[0].innerHTML = '<div class="text-center bg-info text-center p-3"><a class="text-center" href="'+(data.url.toLowerCase().startsWith('www.') ? '//' : '')+''+data.url+'">'+config.lang.gourltext+'</a></div>';
+                      	$(config.output)[0].innerHTML = '<div class="text-center bg-info text-center p-3"><a class="card-link" href="'+(data.url.toLowerCase().startsWith('www.') ? '//' : '')+''+data.url+'">'+config.lang.gourltext+'</a></div>';
                       } else {
                         var timeleft = config.timedown;
                         var KKFS = setInterval(function(){
