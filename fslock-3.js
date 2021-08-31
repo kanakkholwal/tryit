@@ -44,15 +44,15 @@ if (!String.prototype.startsWith) {
                             timeleft -= 1;
                             if(timeleft <= 0){
                               clearInterval(KKFS);
-                              report[0].innerHTML = '<div class="alert bg-success m-3 p-3 text-white text-center" role="alert" ><i class="fas fa-check-circle me-3"></i><a class="card-link text-white" href="'+(data.url.toLowerCase().startsWith('www.') ? '//' : '')+''+data.url+'">'+config.lang.gourltext+'</a></div>';
+                              report[0].innerHTML = '<div class="alert bg-success m-1 p-3 text-white text-center" role="alert" ><i class="fas fa-check-circle me-3"></i><a class="card-link text-white" href="'+(data.url.toLowerCase().startsWith('www.') ? '//' : '')+''+data.url+'">'+config.lang.gourltext+'</a></div>';
                             }
                           }, 1000);
 						}
                       } else {
-                        report[0].innerHTML = '<div class="alert text-center text-white bg-danger m-3 p-3" role="alert" ><i class="fas fa-times-circle me-3"></i>'+config.lang.wrongpass+'</div>';
+                        report[0].innerHTML = '<div class="alert text-center text-white bg-danger m-1 p-3" role="alert" ><i class="fas fa-times-circle me-3"></i>'+config.lang.wrongpass+'</div>';
                       }
                     } else {
-                      report[0].innerHTML = '<div class="alert text-center text-white bg-warning m-3 p-3" role="alert" ><i class="fas fa-times-circle me-3"></i>'+config.lang.emptypass+'</div>';
+                      report[0].innerHTML = '<div class="alert text-center text-white bg-warning m-1 p-3" role="alert" ><i class="fas fa-times-circle me-3"></i>'+config.lang.emptypass+'</div>';
                     }
 
                     setTimeout(function(){
