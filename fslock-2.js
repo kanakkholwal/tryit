@@ -50,7 +50,7 @@
                                   break;
                                 }
                               }
-                              result.innerHTML = '<div class="alert alert-success text-center">'+config.lang.convertsuccess+'</div><div class="input-group mb-3"><span class="input-group-text" id="final-result"><i class="fas fa-copy fa-fw"></i></span><input type="text"  id ="copyit" class="form-control" onfocus="this.select()" onmouseup="return false"  value="'+linknya+'?u='+encodeURIComponent(CryptoJS.AES.encrypt(JSON.stringify(data), keyit))+'" aria-describedby="final-result"/></div>';
+                              result.innerHTML = '<div class="alert alert-success text-center">'+config.lang.convertsuccess+'</div><div class="input-group  flex-nowrap mb-3"><span class="input-group-text" id="final-result"><i class="fas fa-copy fa-fw"></i></span><input type="text"  id ="copythis" class="form-control" onfocus="this.select()" onmouseup="return false"  value="'+linknya+'?u='+encodeURIComponent(CryptoJS.AES.encrypt(JSON.stringify(data), keyit))+'" aria-describedby="final-result"/></div>';
                               setTimeout(function(){
                                 result.parentNode.style.height = result.offsetHeight+'px';
                               }, 0);
