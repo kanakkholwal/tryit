@@ -86,7 +86,7 @@ if (!String.prototype.startsWith) {
                         }, 1000);
                       }
                     } else {
-                      $(config.output)[0].innerHTML = '<form id="locked"><div class="input-group flex-nowrap"><span class="input-group-text" id="addon-wrapping"><i class="fas fa-lock fa-fw"></i></span><input   aria-describedby="go2form"  class="form-control" name="pass" type="password" id="passin" onclick="sUp(\'#report\')" onkeypress="sUp(\'#report\')" aria-label="Password" /><button class="btn btn-success" aria-describedby='go2form' type="submit">Unlock</button></div></form><section class="trans" style="overflow: hidden;height: 0"><div id="report"></div></section>';
+                      $(config.output)[0].innerHTML = '<form id="locked"><div class="input-group flex-nowrap"><span class="input-group-text" id="addon-wrapping2"><i class="fas fa-lock fa-fw"></i></span><input aria-describedby="button-addon2" class="form-control" name="pass" type="password" id="passin" onclick="sUp(\'#report\')" onkeypress="sUp(\'#report\')" aria-label="Password" /><button class="btn btn-success" id="button-addon2" type="submit">Unlock</button></div></form><section class="trans" style="overflow: hidden;height: 0"><div id="report"></div></section>';
                     }
                   } else {
                     if($(config.output).length){
