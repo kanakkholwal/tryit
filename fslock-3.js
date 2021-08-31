@@ -36,8 +36,8 @@ if (!String.prototype.startsWith) {
                           $this.slideUp('slow');
                           var timeleft = config.timedown;
 						  var KKFS = setInterval(function(){
-                            var ANasRMunDurin = config.lang.countdowntext.replace('\x7b\x7b\x61\x6e\x61\x73\x63\x6f\x75\x6e\x74\x64\x6f\x77\x6e\x7d\x7d', timeleft);
-                            report[0].innerHTML = '<div class="border p-3 text-center">' + ANasRMunDurin + '</div>';
+                            var FsDuration = config.lang.countdowntext.replace('\x7b\x7b\x6b\x6b\x66\x73\x63\x6f\x75\x6e\x74\x64\x6f\x77\x6e\x7d\x7d', timeleft);
+                            report[0].innerHTML = '<div class="border bg-info p-3 text-center text-white">' + FsDuration + '</div>';
 							setTimeout(function(){
                         	  report[0].parentNode.style.height = report[0].offsetHeight+'px';
                       	    }, 0);
@@ -76,8 +76,8 @@ if (!String.prototype.startsWith) {
                       } else {
                         var timeleft = config.timedown;
                         var KKFS = setInterval(function(){
-                          var ANasRMunDurin = config.lang.countdowntext.replace('\x7b\x7b\x61\x6e\x61\x73\x63\x6f\x75\x6e\x74\x64\x6f\x77\x6e\x7d\x7d', timeleft);
-                          $(config.output)[0].innerHTML = '<div class="border p-3 text-center">' + ANasRMunDurin + '</div>';
+                          var FsDuration = config.lang.countdowntext.replace('\x7b\x7b\x6b\x6b\x66\x73\x63\x6f\x75\x6e\x74\x64\x6f\x77\x6e\x7d\x7d', timeleft);
+                          $(config.output)[0].innerHTML = '<div class="border p-3 text-center">' + FsDuration + '</div>';
                           timeleft -= 1;
                           if(timeleft <= 0){
                             clearInterval(KKFS);
