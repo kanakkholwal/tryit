@@ -44,15 +44,15 @@ if (!String.prototype.startsWith) {
                             timeleft -= 1;
                             if(timeleft <= 0){
                               clearInterval(KKFS);
-                              report[0].innerHTML = '<div class="text-center"><a href="'+(data.url.toLowerCase().startsWith('www.') ? '//' : '')+''+data.url+'">'+config.lang.gourltext+'</a></div>';
+                              report[0].innerHTML = '<div class="alert p-3 text-center" role="alert" data-mdb-color="success"><i class="fas fa-check-circle me-3"></i><a class="card-link" href="'+(data.url.toLowerCase().startsWith('www.') ? '//' : '')+''+data.url+'">'+config.lang.gourltext+'</a></div>';
                             }
                           }, 1000);
 						}
                       } else {
-                        report[0].innerHTML = '<div class="alert alert-danger text-center">'+config.lang.wrongpass+'</div>';
+                        report[0].innerHTML = '<div class="alert text-center p-3" role="alert" data-mdb-color="danger"><i class="fas fa-times-circle me-3"></i>'+config.lang.wrongpass+'</div>';
                       }
                     } else {
-                      report[0].innerHTML = '<div class="alert alert-danger text-center">'+config.lang.emptypass+'</div>';
+                      report[0].innerHTML = '<div class="alert text-center p-3" role="alert" data-mdb-color="danger"><i class="fas fa-times-circle me-3"></i>'+config.lang.emptypass+'</div>';
                     }
 
                     setTimeout(function(){
@@ -72,7 +72,7 @@ if (!String.prototype.startsWith) {
 
                     if (typeof(data) === "object") {
                       if(!data.countdown){
-                      	$(config.output)[0].innerHTML = '<div class="text-center"><a class="text-center" href="'+(data.url.toLowerCase().startsWith('www.') ? '//' : '')+''+data.url+'">'+config.lang.gourltext+'</a></div>';
+                      	$(config.output)[0].innerHTML = '<div class="text-center bg-success text-center p-3"><a class="text-center" href="'+(data.url.toLowerCase().startsWith('www.') ? '//' : '')+''+data.url+'">'+config.lang.gourltext+'</a></div>';
                       } else {
                         var timeleft = config.timedown;
                         var KKFS = setInterval(function(){
@@ -86,7 +86,7 @@ if (!String.prototype.startsWith) {
                         }, 1000);
                       }
                     } else {
-                      $(config.output)[0].innerHTML = '<form class="form-group" id="locked"><div class="input-group"><div class="input-group-prepend"><span class="input-group-text"><i class="fas fa-lock fa-fw"></i></span></div><input class="form-control" name="pass" type="password" id="passin" onclick="sUp(\'#report\')" onkeypress="sUp(\'#report\')" aria-label="Password" /><div class="input-group-append"><button class="btn btn-primary" type="submit">Unlock</button></div></div></form><section class="trans" style="overflow: hidden;height: 0"><div id="report"></div></section>';
+                      $(config.output)[0].innerHTML = '<form class="form-group" id="locked"><div class="input-group flex-nowrap"><span class="input-group-text" id="go2form"><i class="fas fa-lock fa-fw"></i></span></div><input   aria-describedby="go2form"  class="form-control" name="pass" type="password" id="passin" onclick="sUp(\'#report\')" onkeypress="sUp(\'#report\')" aria-label="Password" /><div class="input-group-append"><button class="btn btn-success" type="submit">Unlock</button></div></div></form><section class="trans" style="overflow: hidden;height: 0"><div id="report"></div></section>';
                     }
                   } else {
                     if($(config.output).length){
