@@ -50,7 +50,7 @@
                                   break;
                                 }
                               }
-                              result.innerHTML = '<div class="alert alert-success text-center">'+config.lang.convertsuccess+'</div><div class="input-group  flex-nowrap mb-3"><button class="input-group-text"  ><i class="fas fa-copy fa-fw"></i></button><input type="text"  id ="copy1" class="form-control" onfocus='this.select();document.execCommand("copy");alert("Code Copied To Clipboard!");' onmouseup="return false"  value="'+linknya+'?u='+encodeURIComponent(CryptoJS.AES.encrypt(JSON.stringify(data), keyit))+'" aria-describedby="final-result"/></div>';
+                              result.innerHTML = '<div class="alert alert-success text-center">'+config.lang.convertsuccess+'</div><div class="input-group  flex-nowrap mb-3"><button class="input-group-text"  ><i class="fas fa-copy fa-fw"></i></button><input type="text"  id ="copy1" class="form-control" onfocus="this.select()" onclick='this.select();document.execCommand("copy");alert("Code Copied To Clipboard!");' onmouseup="return false"  value="'+linknya+'?u='+encodeURIComponent(CryptoJS.AES.encrypt(JSON.stringify(data), keyit))+'" aria-describedby="final-result"/></div>';
                               setTimeout(function(){
                                 result.parentNode.style.height = result.offsetHeight+'px';
                               }, 0);
@@ -61,7 +61,7 @@
                           result.innerHTML = '<div class="alert alert-warning text-center">'+config.lang.validtext+'</div>' ;
                         }
                       } else {
-                        result.innerHTML = validurlit(url.value) ? '<div class="alert alert-success text-center">'+config.lang.convertsuccess+'</div><div class="input-group flex-nowrap"><span class="input-group-text" ><i class="fas fa-copy fa-fw"></i></span><input type="text" id="copy2" class="form-control" onfocus='this.select();document.execCommand("copy");alert("Code Copied To Clipboard!");' onmouseup="return false" style="box-shadow: 0 0 0 0 transparent" value="'+blog+'/'+config.page+'?u='+encodeURIComponent(CryptoJS.AES.encrypt(JSON.stringify(data), keyit))+'" aria-describedby="final"/></div>' : '<div class="alert alert-warning text-center">'+config.lang.validtext+'</div>' ;
+                        result.innerHTML = validurlit(url.value) ? '<div class="alert alert-success text-center">'+config.lang.convertsuccess+'</div><div class="input-group flex-nowrap"><span class="input-group-text" ><i class="fas fa-copy fa-fw"></i></span><input type="text" id="copy2" class="form-control" onfocus="this.select()" onclick='this.select();document.execCommand("copy");alert("Code Copied To Clipboard!");' onmouseup="return false" style="box-shadow: 0 0 0 0 transparent" value="'+blog+'/'+config.page+'?u='+encodeURIComponent(CryptoJS.AES.encrypt(JSON.stringify(data), keyit))+'" aria-describedby="final"/></div>' : '<div class="alert alert-warning text-center">'+config.lang.validtext+'</div>' ;
                       }
                     } else {
                       result.innerHTML = '<div class="alert alert-danger text-center">'+config.lang.urlempty+'</div>';
